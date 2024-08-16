@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <form action="/public/index.html" method="POST" id="formData">
+            <div>
+                <h2 class="h2">Register</h2>
+            </div>
+            <div>
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" id="firstName" class="form-control" required>
+            </div>
+            <div>
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" id="lastName" class="form-control" required>
+            </div>
+            <div>
+                <label for="age" class="form-label">Age</label>
+                <input type="number" id="age" class="form-control" required>
+            </div><div>
+                <label for="email" class="form-label">E-mail Address</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary mt-2">Submit form</button>
+            </div>
+        </form>
+    </div>
+    <div class="container mt-5">
+        <div class="border p-4 rounded">
+            <div id="response"></div>
+        </div>
+    </div>
+</body>
+</html>
