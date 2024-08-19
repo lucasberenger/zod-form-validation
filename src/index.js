@@ -19,3 +19,5 @@ app.use(registerRouter);
 app.listen(PORT, () => {
     console.log('HTTP server is running.')
 })
+
+export default app;
